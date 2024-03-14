@@ -21,25 +21,20 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Synapse: Learning Preferential Concepts from Visual Demonstrations
-          </h1>
+          <h1 class="title is-1 publication-title">Synapse: Learning Preferential Concepts from Visual Demonstrations</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Sadanand Modak <sup>1</sup>,</span>
+              Sadanand Modak<sup>1</sup>, </span>
             <span class="author-block">
-              Noah Patton <sup>1</sup>,</span>
+              Noah Patton<sup>1</sup>, </span>
             <span class="author-block">
-              Isil Dillig <sup>1</sup>,
-            </span>
+              Isil Dillig<sup>1</sup>, </span>
             <span class="author-block">
-              Joydeep Biswas <sup>1</sup>,
-            </span>
+              Joydeep Biswas<sup>1</sup></span>
           </div>
-
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>UT Austin</span>
           </div>
-
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- Paper PDF Link. -->
@@ -59,7 +54,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>ArXiv</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -73,14 +68,12 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 </a>
               </span>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -116,7 +109,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
   </div>
 </section>
 
-## Website heavily under construction...
+<span style="color:red">## Website heavily under construction...</span>
 
 <footer class="footer">
   <div class="container">
