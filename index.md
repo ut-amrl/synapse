@@ -119,7 +119,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
       <a class="icon-link" href="https://amrl.cs.utexas.edu/synapse">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/sadanand1120/nspl" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/sadanand1120/nspl">
         <i class="fab fa-github"></i>
       </a>
     </div>
