@@ -7,6 +7,14 @@ description: Synapse learns preferential concepts from natural language input an
 keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthesis, Visual Reasoning]
 ---
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+.curly-font {
+    font-family: 'Space Grotesk', cursive;
+    color: orange;
+}
+</style>
+
 <!-- Title, Authors and Buttons -->
 <section class="hero">
   <div class="hero-body">
@@ -38,7 +46,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
                 </span>
-                <span class="is-size-6">Paper<br>
+                <span class="is-size-7">Paper<br>
                 (soon)</span>
               </a>
             </span>
@@ -49,7 +57,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span class="is-size-6">ArXiv<br>
+                <span class="is-size-7">ArXiv<br>
                 (soon)</span>
               </a>
             </span>
