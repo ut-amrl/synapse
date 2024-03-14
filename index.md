@@ -22,8 +22,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Synapse: Learning Preferential Concepts from<br>
-            Visual Demonstrations
+            Synapse: Learning Preferential Concepts from Visual Demonstrations
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
