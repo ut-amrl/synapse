@@ -35,39 +35,39 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>UT Austin</span>
           </div>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Paper PDF Link. -->
-              <span class="link-block">
-                <a href="https://amrl.cs.utexas.edu/synapse"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- Paper arxiv Link. -->
-              <span class="link-block">
-                <a href="https://amrl.cs.utexas.edu/synapse"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>ArXiv</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/sadanand1120/nspl"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
-            </div>
+        </div>
+        <div class="column has-text-centered buttons are-medium is-centered">
+          <div class="publication-links">
+            <!-- Paper PDF Link. -->
+            <span class="link-block">
+              <a href="https://amrl.cs.utexas.edu/synapse"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <!-- Paper arxiv Link. -->
+            <span class="link-block">
+              <a href="https://amrl.cs.utexas.edu/synapse"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span>
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a href="https://github.com/sadanand1120/nspl"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
   </div>
 </section>
 
-<span style="color:red">## Website heavily under construction...</span>
+## <span style="color:red">Website heavily under construction...</span>
 
 <footer class="footer">
   <div class="container">
