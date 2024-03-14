@@ -25,14 +25,14 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Sadanand Modak<sup>1</sup>,</span>
+              Sadanand Modak <sup>1</sup>,</span>
             <span class="author-block">
-              Noah Patton<sup>1</sup>,</span>
+              Noah Patton <sup>1</sup>,</span>
             <span class="author-block">
-              Isil Dillig<sup>1</sup>,
+              Isil Dillig <sup>1</sup>,
             </span>
             <span class="author-block">
-              Joydeep Biswas<sup>1</sup>,
+              Joydeep Biswas <sup>1</sup>,
             </span>
           </div>
 
@@ -49,7 +49,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (coming soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- Paper arxiv Link. -->
@@ -59,7 +59,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv (coming soon)</span>
+                  <span>arXiv</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -115,6 +115,8 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
     <!--/ Abstract. -->
   </div>
 </section>
+
+## Website heavily under construction...
 
 <footer class="footer">
   <div class="container">
