@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Basic Page Needs
   ------------------------------------ -->
@@ -13,24 +13,26 @@
 
   <!-- FONT
   ------------------------------------ -->
-  <link href='//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic'
+    rel='stylesheet' type='text/css'>
 
   <!-- CSS
   ------------------------------------ -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/lazyYT.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ " assets/css/style.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ " assets/css/lazyYT.css" | absolute_url }}">
 
   <!-- Favicon
   ------------------------------------ -->
-  <link rel="icon" type="image/png" href="{{ "/assets/favicon.png" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ " assets/favicon.png" | relative_url }}">
 
   <!-- Required for GetSimple Plugins
   ------------------------------------ -->
   <meta name="keywords" content="courses, computer science, robotics">
 
 </head>
+
 <body id="index">
 
   <!-- Primary Page Layout
@@ -39,22 +41,22 @@
     <div class="row">
       <nav class="twelve columns">
         <hr />
-          <ul>
-            {% assign mypages = site.pages | sort: "order" %}
-            {% for navpage in mypages %}
-              {% unless navpage.exclude %}
-                {% if navpage.title == page.title %}
-                  <li class="current active">
-                {% else %}
-                  <li>
-                {% endif %}
-                <a href="{{ navpage.url | absolute_url}}">
-                  {{ navpage.title }}
-                </a>
-                </li>
-              {% endunless %}
-            {% endfor %}
-          </ul>
+        <ul>
+          {% assign mypages = site.pages | sort: "order" %}
+          {% for navpage in mypages %}
+          {% unless navpage.exclude %}
+          {% if navpage.title == page.title %}
+          <li class="current active">
+            {% else %}
+          <li>
+            {% endif %}
+            <a href="{{ navpage.url | absolute_url}}">
+              {{ navpage.title }}
+            </a>
+          </li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
         <hr />
       </nav>
     </div>
@@ -68,12 +70,12 @@
   <!-- End Document
   ------------------------------------ -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="{{ "/assets/js/lazyYT.js" | absolute_url }}"></script>
+  <script src="{{ " assets/js/lazyYT.js" | absolute_url }}"></script>
   <script>
-    $( document ).ready(function() {
-        $('.js-lazyYT').lazyYT();
+    $(document).ready(function () {
+      $('.js-lazyYT').lazyYT();
     });
   </script>
 </body>
-</html>
 
+</html>
