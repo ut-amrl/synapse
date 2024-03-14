@@ -1,4 +1,4 @@
-name: Synapse # Site name - you can change this to the name of your own site.
+title: Synapse # Site title - you can change this to the name of your own site.
 markdown: kramdown # Specifies kramdown as the Markdown processor. You can keep this as is.
 url: https://amrl.cs.utexas.edu # The base URL for your site - change this to your site's URL.
 
