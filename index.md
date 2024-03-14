@@ -46,7 +46,8 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
                 </span>
-                <span>Paper</span>
+                <span>Paper<br>
+                (soon)</span>
               </a>
             </span>
             <!-- Paper arxiv Link. -->
@@ -56,7 +57,8 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span>ArXiv</span>
+                <span>ArXiv<br>
+                (soon)</span>
               </a>
             </span>
             <!-- Code Link. -->
