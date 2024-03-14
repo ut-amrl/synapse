@@ -15,7 +15,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
 }
 </style>
 
-<!-- Title and Authors -->
+<!-- Title, Authors and Buttons -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -38,18 +38,6 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>UT Austin</span>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Buttons -->
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
           <div class="publication-links">
             <!-- Paper PDF Link. -->
             <span class="link-block">
