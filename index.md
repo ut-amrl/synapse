@@ -56,7 +56,7 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span class="is-size-7">ArXiv<br>
+                <span class="is-size-7">arXiv<br>
                 (soon)</span>
               </a>
             </span>
