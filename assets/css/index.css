@@ -122,6 +122,9 @@ body {
   margin: 0;
 }
 
+.is-size-8 {
+  font-size: .50rem !important
+}
 
 .interpolation-panel {
   background: #f5f5f5;
