@@ -51,14 +51,12 @@ keywords: [Synapse, Concept learning, Neuro-symbolic programming, Program Synthe
             </span>
             <!-- Paper arxiv Link. -->
             <span class="link-block">
-              <a href="https://amrl.cs.utexas.edu/synapse"
+              <a href="https://arxiv.org/abs/2403.16689"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span class="is-size-8">arXiv<br>
-                (coming<br>
-                03/25)</span>
+                <span>arXiv</span>
               </a>
             </span>
             <!-- Code Link. -->
