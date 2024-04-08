@@ -10951,10 +10951,6 @@ a.has-text-danger-dark:hover {
     font-size: .75rem !important
 }
 
-.is-size-8 {
-    font-size: .50rem !important
-  }
-
 @media screen and (max-width:768px) {
     .is-size-1-mobile {
         font-size: 3rem !important
