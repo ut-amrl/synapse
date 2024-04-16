@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+.curly-font {
+    font-family: 'Space Grotesk', cursive;
+    color: rgb(30, 0, 255);
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }
