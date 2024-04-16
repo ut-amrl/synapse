@@ -77,7 +77,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Synapse: Learning Preferential Concepts from Visual Demonstrations
+            <h1 class="title is-1 publication-title"><span class="curly-font">Synapse</span>: Learning Preferential
+              Concepts from Visual Demonstrations
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -147,12 +148,14 @@
         </div>
         <h2 class="subtitle has-text-centered">
           Illustration of <span class="curly-font">Synapse</span> for identifying good contingency locations. <b>(a)</b>
-          <span class="">Synapse</span> learns a neuro-symbolic program that represents the preferential concept
+          <span class="curly-font">Synapse</span> learns a neuro-symbolic program that represents the preferential
+          concept
           based on user demonstrations, which include both a NL explanation and a physical demonstration. The learning
           algorithm consists of three steps, namely updating the concept library, synthesizing a program sketch, and
           performing parameter synthesis; <b>(b)</b> The new sketch gets synthesized based on the previous sketch and
           the current natural language description; <b>(c)</b> Parameter synthesis determines suitable values for
-          numeric parameters in the program sketch; <b>(d)</b> <span class="">Synapse</span> evaluates the program
+          numeric parameters in the program sketch; <b>(d)</b> <span class="curly-font">Synapse</span> evaluates the
+          program
           on a new query image to return a preference (in this case, boolean) mask over the input image.
         </h2>
       </div>
@@ -169,19 +172,22 @@
           <div class="content has-text-justified">
             <p>
               We address the problem of <i>preference learning</i>, which aims to learn user-specific preferences (e.g.,
-              <i>"good parking spot"</i>, <i>"convenient drop-off location"</i>) from visual input. Despite its
-              similarity to learning <i>factual</i> concepts (e.g., "red cube"), preference learning is a fundamentally
+              '<i>good parking spot</i>', '<i>convenient drop-off location</i>') from visual input. Despite its
+              similarity to learning <i>factual</i> concepts (e.g., 'red cube'), preference learning is a fundamentally
               harder problem due to its subjective nature and the paucity of person-specific training data.
             </p>
             <p>
-              To tackle this problem, we present new framework called <span class="">Synapse</span>, which is a
+              To tackle this problem, we present new framework called <span class="curly-font">Synapse</span>, which is
+              a
               neuro-symbolic approach designed to efficiently learn preferential concepts from limited demonstrations.
-              <span class="">Synapse</span> represents preferences as neuro-symbolic programs in a domain-specific
+              <span class="curly-font">Synapse</span> represents preferences as neuro-symbolic programs in a
+              domain-specific
               language (DSL) that operates over images, and leverages a novel combination of visual parsing, large
               language models, and program synthesis to learn programs representing individual preferences. We evaluate
-              <span class="">Synapse</span> through extensive experimentation including a user case study focusing
+              <span class="curly-font">Synapse</span> through extensive experimentation including a user case study
+              focusing
               on mobility-related concepts in mobile robotics and autonomous driving. Our evaluation demonstrates that
-              <span class="">Synapse</span> significantly outperforms existing baselines as well as its own
+              <span class="curly-font">Synapse</span> significantly outperforms existing baselines as well as its own
               ablations.
             </p>
           </div>
@@ -200,6 +206,19 @@
         </div>
       </div> -->
       <!--/ Paper video. -->
+
+      <!-- Demos -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Demos</h2>
+          <!-- <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div> -->
+        </div>
+      </div>
+      <!-- Demos -->
+
     </div>
   </section>
 
@@ -246,7 +265,7 @@
           <div class="content">
             <h2 class="title is-3">Results</h2>
             <p>
-              We evaluate <span class="">Synapse</span> against eight baselines and conduct multiple ablation
+              We evaluate <span class="curly-font">Synapse</span> against eight baselines and conduct multiple ablation
               studies to confirm our design choices.
             </p>
             <div class="has-text-centered">
@@ -257,18 +276,35 @@
       </div>
       <!-- Results -->
 
+      <!-- Lifelong curve -->
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-4">Lifelong Learning Curve</h2>
+            <p>
+              <span class="curly-font">Synapse</span> learns new concepts and synthesizes better parameters as it sees
+              more demonstrations.
+            </p>
+            <div class="has-text-centered">
+              <img src="./static/images/lifelong_single.png" style="max-width:100%;height:auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lifelong curve -->
+
       <!-- User-study -->
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <h2 class="title is-5">User-study</h2>
-            <!-- <p>
-              We evaluate <span class="">Synapse</span> against eight baselines and conduct multiple ablation
-              studies to confirm our design choices.
+            <h2 class="title is-4">User-study</h2>
+            <p>
+              We conduct a <span class="curly-font">Synapse</span>-based case-study to test if it can align well with
+              multiple user preferences.
             </p>
             <div class="has-text-centered">
-              <img src="./static/images/barplot.svg" style="max-width:100%;height:auto;">
-            </div> -->
+              <img src="./static/images/userstudy.svg" style="max-width:100%;height:auto;">
+            </div>
           </div>
         </div>
       </div>
