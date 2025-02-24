@@ -6,3 +6,5 @@ pycryptodome
 pycryptodomex
 gnupg
 tqdm
+evaluate
+simple-colors

@@ -164,3 +164,4 @@ cython_debug/
 **/*.clang-format
 **/syncdata/
 **/*.bag
+**/*.mp4
