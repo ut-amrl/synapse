@@ -16,6 +16,7 @@ This is the official repository for AAAI 2025 paper **SYNAPSE: SYmbolic Neural-A
 - conda create -n synapse python=3.10
 - install torch based on your cuda specs from [here](https://pytorch.org/get-started/locally/)
 - ./setup.sh
+- Download test bags from <put url>
 
 ## Usage
 

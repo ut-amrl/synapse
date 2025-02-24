@@ -2,3 +2,7 @@ matplotlib
 termcolor
 opencv-python
 rospkg
+pycryptodome
+pycryptodomex
+gnupg
+tqdm

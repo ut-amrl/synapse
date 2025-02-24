@@ -162,3 +162,5 @@ cython_debug/
 # Custom
 **/.vscode
 **/*.clang-format
+**/syncdata/
+**/*.bag
