@@ -17,6 +17,7 @@ This is the official repository for AAAI 2025 paper **SYNAPSE: SYmbolic Neural-A
 - install torch based on your cuda specs from [here](https://pytorch.org/get-started/locally/)
 - ./setup.sh
 - Download test bags from <put url>
+- set the OPENAI_API_KEY in the environment variables
 
 ## Usage
 

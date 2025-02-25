@@ -15,11 +15,11 @@ class GSAM:
             self.DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         if self.DEVICE == 'cuda':
             assert torch.cuda.is_available()
-        self.GROUNDING_DINO_CONFIG_PATH = "gsam/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py"
-        self.GROUNDING_DINO_CHECKPOINT_PATH = "gsam/weights/groundingdino_swint_ogc.pth"
+        self.GROUNDING_DINO_CONFIG_PATH = "third_party/gsam/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+        self.GROUNDING_DINO_CHECKPOINT_PATH = "third_party/gsam/weights/groundingdino_swint_ogc.pth"
         self.grounding_dino_model = Model(model_config_path=self.GROUNDING_DINO_CONFIG_PATH, model_checkpoint_path=self.GROUNDING_DINO_CHECKPOINT_PATH, device=self.DEVICE)
         self.SAM_ENCODER_VERSION = "vit_h"
-        self.SAM_CHECKPOINT_PATH = f"gsam/weights/sam_hq_{self.SAM_ENCODER_VERSION}.pth"
+        self.SAM_CHECKPOINT_PATH = f"third_party/gsam/weights/sam_hq_{self.SAM_ENCODER_VERSION}.pth"
         self.sam = sam_hq_model_registry[self.SAM_ENCODER_VERSION](checkpoint=self.SAM_CHECKPOINT_PATH)
         self.sam.to(device=self.DEVICE)
         self.sam_predictor = SamPredictor(self.sam)
