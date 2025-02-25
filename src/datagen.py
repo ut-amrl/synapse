@@ -198,7 +198,6 @@ class NSInferTerrainSeg:
             self.local_to_map_frame = LocalToMapFrame()
             self.terrain_model = TerrainSegFormer(hf_model_ver=None)
             self.terrain_model.load_model_inference()
-            self.terrain_model.prepare_dataset()
         else:
             self.lidar_cam_calib = MODELS["lidar_cam_calib"]
             self.local_to_map_frame = MODELS["local_to_map_frame"]
