@@ -18,6 +18,7 @@ This is the official repository for AAAI 2025 paper **SYNAPSE: SYmbolic Neural-A
 - ./setup.sh
 - Download test bags from <put url>
 - set the OPENAI_API_KEY in the environment variables
+- run export ROS_PACKAGE_PATH=$(pwd):$ROS_PACKAGE_PATH in pips and then make -j4
 
 ## Usage
 
