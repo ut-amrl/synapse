@@ -74,30 +74,35 @@ class TerrainSegFormer:
 
         self.metric = evaluate.load("mean_iou")
 
+    @torch.inference_mode()
     def load_model_inference(self):
-        try:
-            self.feature_extractor = SegformerFeatureExtractor.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_safetensors=True, use_auth_token=self.hf_key)
-            self.model = SegformerForSemanticSegmentation.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_safetensors=True, use_auth_token=self.hf_key)
-        except:
-            self.feature_extractor = SegformerFeatureExtractor.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_auth_token=self.hf_key)
-            self.model = SegformerForSemanticSegmentation.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_auth_token=self.hf_key)
-        self.model.eval()
+        with torch.device(self.DEVICE):
+            try:
+                self.feature_extractor = SegformerFeatureExtractor.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_safetensors=True, use_auth_token=self.hf_key)
+                self.model = SegformerForSemanticSegmentation.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_safetensors=True, use_auth_token=self.hf_key)
+            except:
+                self.feature_extractor = SegformerFeatureExtractor.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_auth_token=self.hf_key)
+                self.model = SegformerForSemanticSegmentation.from_pretrained(f"{self.hf_username}/{self.hub_model_id}", use_auth_token=self.hf_key)
+            self.model.eval()
 
+    @torch.inference_mode()
     def _internal_predict(self, images, image_size):
-        inputs = self.feature_extractor(images=images, return_tensors="pt")
-        outputs = self.model(**inputs)
-        logits = outputs.logits  # shape (batch_size, num_labels, height/4, width/4)
+        with torch.device(self.DEVICE):
+            inputs = self.feature_extractor(images=images, return_tensors="pt")
+            inputs['pixel_values'] = inputs['pixel_values'].to(self.DEVICE)
+            outputs = self.model(**inputs)
+            logits = outputs.logits  # shape (batch_size, num_labels, height/4, width/4)
 
-        # First, rescale logits to original image size
-        upsampled_logits = nn.functional.interpolate(
-            logits,
-            size=image_size,
-            mode='bilinear',
-            align_corners=False
-        )
+            # First, rescale logits to original image size
+            upsampled_logits = nn.functional.interpolate(
+                logits,
+                size=image_size,
+                mode='bilinear',
+                align_corners=False
+            )
 
-        # Second, apply argmax on the class dimension
-        pred_seg = upsampled_logits.argmax(dim=1)
+            # Second, apply argmax on the class dimension
+            pred_seg = upsampled_logits.argmax(dim=1)
         return pred_seg
 
     def predict_one(self, pred_ds, idx):
