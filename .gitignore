@@ -165,3 +165,4 @@ cython_debug/
 **/syncdata/
 **/*.bag
 **/*.mp4
+**/demo*/pcd*/

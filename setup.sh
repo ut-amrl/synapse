@@ -26,4 +26,4 @@ wget https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-VKITTI-Large
 wget https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Large/resolve/main/depth_anything_v2_metric_hypersim_vitl.pth -O depth_anything_v2_metric_hypersim_vitl.pth
 cd ../../../..
 
-pip3 uninstall numpy && pip3 install "numpy<1.26.4" && pip3 install supervision==0.6.0
+pip3 uninstall numpy && pip3 install "numpy<1.26.4" && pip3 install supervision==0.6.0 && pip3 install open3d==0.16.0
