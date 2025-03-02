@@ -1,0 +1,29 @@
+# YOUR JOB
+You need to update the program in the best possible way so that it accomodates the current program and the new description. Use `if`, `elif` statements if needed.
+Given the object under consideration, the allowed references (i.e., the objects and things you are allowed to use in the program for this object), the user's description, and current program, generate a new program.
+The format looks like this:
+
+## Input
+object: dinner fork
+allowed_references: table, bottom edge, top edge, left edge, right edge, center, dinner plate
+description: Dinner plate near the bottom edge. Since I am right handed, I want fork to be on the right of plate while knife on the left. The knife cutting edge should be facing the plate and both knife and fork fairly close to plate.
+current_program:
+```python
+def program(loc):
+    if to_right('bread plate') and near('bread plate'):
+        return True
+    return False
+```
+
+## Output
+```python
+def program(loc):
+    if to_right('bread plate') and near('bread plate'):
+        return True
+    elif to_right('dinner plate') and near('dinner plate'):
+        return True
+    return False
+```
+END
+
+Now it's your turn to update programs.

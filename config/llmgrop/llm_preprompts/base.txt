@@ -1,0 +1,38 @@
+We are trying to learn preferences of the user for arranging objects on a tabletop. The user gives a description of their preference, and we want to generate programs for each of the objects.
+We have these objects:
+- dinner plate
+- bread plate
+- fruit bowl
+- place mat
+- teacup
+- water cup
+- dinner fork
+- dinner knife
+- bread
+- strawberry
+- teacup lid
+
+For a given object, the program that we want is a boolean (True/False) program, that takes as input a location (loc) and outputs if that is a good location (based on user preference) for the object to be placed.
+The program is expressed in a predefined DSL (Domain Specific Language) in python. Other than the input location, in the program you are ONLY allowed to refer to objects (as defined above), and referential things which are:
+- table
+- bottom edge
+- top edge
+- left edge
+- right edge
+- center
+
+The DSL can use `and`, `or`, `not` operators, as well as `if`, `elif` (NO `else`) statements, and has the following functions:
+* `near(k: str)` - returns True if the object is near the object/thing k
+* `to_right(k: str)` - returns True if the object is to the right of the object/thing k
+* `to_left(k: str)` - returns True if the object is to the left of the object/thing k
+* `above(k: str)` - returns True if the object is above the object/thing k
+* `below(k: str)` - returns True if the object is below the object/thing k
+* `on_top(k: str)` - returns True if the object is on top of the object/thing k
+* `inside(k: str)` - returns True if the object is inside the object/thing k
+* `under(k: str)` - returns True if the object is under the object/thing k
+
+# Important notes:
+- Use commonsense as well if confused when generating programs based on general tabletop arrangements that you observe. Assume the person is sitting at the bottom edge of the table.
+- Please use all smallcase letters. ALWAYS terminate your answer with END token.
+- You'll place objects in a smart order which takes care of dependencies, such that for each object you should be able to refer to the objects that are placed before it in the order.
+- Default last statement of the generated program should be `return False`.

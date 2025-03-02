@@ -1,0 +1,19 @@
+# YOUR JOB
+Given the object under consideration, the allowed references (i.e., the objects and things you are allowed to use in the program for this object), and the user's description, generate a program that will output True if the object is placed according to the user's preference and False otherwise.
+The format looks like this:
+
+## Input
+object: dinner fork
+allowed_references: table, bottom edge, top edge, left edge, right edge, center, dinner plate
+description: Dinner plate near the bottom edge. Since I am right handed, I want fork to be on the right of plate while knife on the left. The knife cutting edge should be facing the plate and both knife and fork fairly close to plate.
+
+## Output
+```python
+def program(loc):
+    if to_right('dinner plate') and near('dinner plate'):
+        return True
+    return False
+```
+END
+
+Now it's your turn to generate programs for the user preferences.

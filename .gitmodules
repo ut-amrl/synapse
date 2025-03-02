@@ -10,3 +10,7 @@
 [submodule "third_party/jackal_calib"]
 	path = third_party/jackal_calib
 	url = git@github.com:sadanand1120/jackal_calib.git
+[submodule "third_party/urdf_models"]
+	path = third_party/urdf_models
+	url = git@github.com:sadanand1120/URDF_models.git
+	branch = synapse

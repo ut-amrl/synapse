@@ -1,0 +1,20 @@
+# YOUR JOB
+User made certain arrangements for some subtasks with particular objects and gave the preference description. Now, given a new task with a different set of objects, you need to infer the user description based on previous descriptions.
+Given previous subtasks with objects and the user's description, generate the user's description for the current task.
+Take into consideration that it is a small table and you need to put all objects on it properly. Try to accomodate user preferences from their descriptions as best as possible.
+The format looks like this:
+
+## Input
+objects: dinner fork, dinner plate, dinner knife
+description: Dinner plate near the bottom edge. Since I am right handed, I want fork to be on the right of plate while knife on the left. The knife cutting edge should be facing the plate and both knife and fork fairly close to plate.
+objects: teacup, dinner plate, teacup lid
+description: Plate in the middle. Cup to the right and lid on the cup.
+current_objects: teacup lid, dinner fork, teacup, dinner plate
+
+## Output
+```python
+current_description = "Plate in the middle. Cup to the left and lid on the cup. Fork to the right of plate."
+```
+END
+
+Now it's your turn to generate the description.

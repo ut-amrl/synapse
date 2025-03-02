@@ -1,0 +1,20 @@
+# YOUR JOB
+User made certain arrangements for some subtasks with particular objects. Given a new task with a different set of objects, you need to infer the correct order of objects based on previous orders.
+You need to take care of the dependencies that the user would have made which led to the previous orders. Use COMMONSENSE and make the best ordering possible.
+You would be shown a couple or more previous orders and current list of objects. You need to generate the ordered list of objects for the current task.
+The format looks like this:
+
+## Input
+objects: dinner fork, dinner plate, dinner knife
+ordered_objects = ['dinner plate', 'dinner fork', 'dinner knife']
+objects: teacup, dinner plate, teacup lid
+ordered_objects = ['dinner plate', 'teacup', 'teacup lid']
+current_objects: teacup lid, dinner fork, teacup, dinner plate
+
+## Output
+```python
+current_ordered_objects = ['dinner plate', 'teacup', 'teacup lid', 'dinner fork']
+```
+END
+
+Now it's your turn to generate the order.

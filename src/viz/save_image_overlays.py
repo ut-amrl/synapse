@@ -18,7 +18,7 @@ def save_image_overlays(image_path: str, save_rootdir_path: str, fm: FastModels)
     os.makedirs(save_rootdir_path, exist_ok=True)
     cv2_img_np = cv2.imread(image_path)
     pil_img = Image.open(image_path)
-    full_pred_seg, accumulated_results, terrain_results, depth_results, gsam_results = fm.predict_new(pil_img)
+    full_pred_seg, accumulated_results, terrain_results, depth_results, gsam_results = fm.predict_new(pil_img, do_car=False)
 
     # terrain
     pred_img_terrain = terrain_results[0]

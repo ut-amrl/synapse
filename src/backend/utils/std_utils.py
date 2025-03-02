@@ -1,7 +1,26 @@
 import json
 import numpy as np
+from PIL import Image
+import os
 from scipy import ndimage
 from scipy.ndimage import uniform_filter
+
+
+def image_cropper(image_path):
+    # Load the image
+    image = Image.open(image_path)
+
+    # Define the coordinates for cropping
+    left = 395
+    top = 394
+    right = 690
+    bottom = 690
+
+    # Crop the image
+    cropped_image = image.crop((left, top, right, bottom))
+
+    # Save the cropped image
+    cropped_image.save(image_path)
 
 
 def reader(filepath):

@@ -1,0 +1,16 @@
+# YOUR JOB
+You need to determine the correct order of objects taking care of the dependencies that the user is making in the description. In other words, if object B depends on object A, you should place object A before object B.
+Given the list of objects and the user's description, generate the ordered list of objects.
+The format looks like this:
+
+## Input
+objects: dinner fork, dinner plate, dinner knife
+description: Dinner plate near the bottom edge. Since I am right handed, I want fork to be on the right of plate while knife on the left. The knife cutting edge should be facing the plate and both knife and fork fairly close to plate.
+
+## Output
+```python
+ordered_objects = ['dinner plate', 'dinner fork', 'dinner knife']
+```
+END
+
+Now it's your turn to generate the order.
