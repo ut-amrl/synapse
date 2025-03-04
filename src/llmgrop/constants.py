@@ -74,6 +74,11 @@ INFER_TASKS = edict({
     },
 })
 
+## Tabletop coordinate convention
+# X: going bottom to top; [0.749, 1.251]
+# Y: going right to left; [-0.251, 0.251]
+# Z: coming towards the observer; [0.65, ~0.85 (in camera view)]
+# Origin: at the center of table; (1.0, 0.0, 0.65)
 REFS_THINGS = edict({
     'table': {"pt": (0.9, 0.0, 0.65)},
     'bottom edge': {"pt": (0.749, 0.0, 0.65)},
